@@ -1,0 +1,96 @@
+:root{
+    font-size: 15px;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height:100vh;
+    background-color: hsl(0, 0%, 98%);
+}
+/* header */
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 30px;
+    color: hsl(234, 12%, 34%);
+}
+#light-title{
+    font-weight:200;
+}
+.header p{
+    margin: 5% 13%;
+    font-size: 14px;
+    color:hsl(0, 0%, 57%);
+}
+/* sections  */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+.section{
+    width: 320px;
+    padding: 14px;
+    margin: 15px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 10px;   
+}
+.section1{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.section2{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.section3{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.section4{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+/* inside section */
+.cardTitle{
+    color:hsl(234, 12%, 34%);
+    padding-bottom: 5px;;
+    font-weight:600;
+}
+.textcard{
+    color: hsl(229, 6%, 66%); 
+    padding-bottom: 10px;
+}
+.icon{
+    position: relative;
+    left:220px;
+    padding-top: 20px;
+}
+
+/* desktop version */
+@media screen and (min-width:900px){
+  .header p{
+      margin: 0;
+      padding:15px 20%;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+} 
